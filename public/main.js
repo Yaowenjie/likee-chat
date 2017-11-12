@@ -13,8 +13,12 @@ $(function() {
   var $messages = $('.messages'); // Messages area
   var $inputMessage = $('.inputMessage'); // Input message input box
 
+  var $chatWindow = $('.pages')
   var $loginPage = $('.login.page'); // The login page
   var $chatPage = $('.chat.page'); // The chatroom page
+
+  var $enterButton = $('.enterButton');
+  var $closeButton = $('.closeButton');
 
   // Prompt for setting a username
   var username;
@@ -223,6 +227,10 @@ $(function() {
     $inputMessage.focus();
   });
 
+  $enterButton.click(function () {
+    $enterButton.fadeOut();
+    $chatWindow.show();
+  });
   // Socket events
 
   // Whenever the server emits 'login', log the login message
