@@ -231,6 +231,13 @@ $(function() {
     $enterButton.fadeOut();
     $chatWindow.show();
   });
+
+  $closeButton.click(function () {
+    socket.emit('user left');
+    $chatWindow.fadeOut();
+    $enterButton.show();
+  });
+
   // Socket events
 
   // Whenever the server emits 'login', log the login message
