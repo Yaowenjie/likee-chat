@@ -254,6 +254,10 @@ $(function() {
   // Whenever the server emits 'new message', update the chat body
   socket.on('new message', function (data) {
     addChatMessage(data);
+    if (!$chatWindow.is(":visible") && $enterButton.is(":visible")) {
+      $enterButton.fadeOut();
+      $chatWindow.show();
+    }
   });
 
   // Whenever the server emits 'user joined', log it in the chat body
