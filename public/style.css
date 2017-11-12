@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-/*html {*/
-    /*font-weight: 300;*/
-    /*-webkit-font-smoothing: antialiased;*/
-/*}*/
+html {
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
 
 input {
     font-family:
@@ -24,6 +24,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background: #7FDBFF;
 }
 
 ul {
@@ -34,10 +35,13 @@ ul {
 /* Pages */
 
 .pages {
-    height: 100%;
-    margin: 0;
+    height: 420px;
+    width: 450px;
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    border: 3px solid black;
     padding: 0;
-    width: 100%;
 }
 
 .page {
@@ -73,11 +77,11 @@ ul {
 }
 
 .login.page .title {
-    font-size: 200%;
+    font-size: 150%;
 }
 
 .login.page .usernameInput {
-    font-size: 200%;
+    font-size: 150%;
     letter-spacing: 3px;
 }
 
@@ -95,11 +99,11 @@ ul {
 /* Font */
 
 .messages {
-    font-size: 150%;
+    font-size: 100%;
 }
 
 .inputMessage {
-    font-size: 100%;
+    font-size: 70%;
 }
 
 .log {

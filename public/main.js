@@ -229,7 +229,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "欢迎来到Bu・Log";
+    var message = "欢迎来到Bu・Log聊天室";
     log(message, {
       prepend: true
     });
