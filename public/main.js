@@ -28,9 +28,9 @@ $(function() {
   function addParticipantsMessage (data) {
     var message = '';
     if (data.numUsers === 1) {
-      message += "there's 1 participant";
+      message += "当前房间只有您一人";
     } else {
-      message += "there are " + data.numUsers + " participants";
+      message += "当前房间在线人数：" + data.numUsers + "";
     }
     log(message);
   }
@@ -229,7 +229,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "Welcome to Socket.IO Chat – ";
+    var message = "欢迎来到Bu・Log";
     log(message, {
       prepend: true
     });
